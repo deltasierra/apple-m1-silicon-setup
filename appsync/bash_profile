@@ -1,0 +1,33 @@
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
+## work alias section 
+alias dar='docker run --rm -it -v $(pwd):/ansible/playbooks dj-ansible-2.9/playbook' 
+alias s1="ssh admin@r1s1"
+alias s2="ssh admin@r2s1"
+
+## terminal enhancements 
+alias ping="prettyping --nolegend"
+alias gds="git difftool --extcmd 'icdiff --highlight --line-numbers' | less"
+alias gs="git status"
+alias nano="nano -c"
+alias ll="colorls --tree=1 --sd"
+alias lll="colorls --tree=1 --sd -a"
+alias lld="colorls --sd -t -la"
+
+## alias when for `ls-go` and `bat` not yet working in Apple Silicon ## 
+#alias lll="ls-go -alLnkS"
+#alias ll="ls-go -lnLkS"
+#alias llr="ls-go -lnLksr"
+#alias ls=ll
+#alias cat="bat"
+
+## Apple silicon and homebrew 
+alias ibrew='arch -x86_64 /usr/local/bin/brew'
+
+# more homebrew for apple silicon stuff 
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
+# Load .bashrc if it exists
+test -f ~/.bashrc && source ~/.bashrc

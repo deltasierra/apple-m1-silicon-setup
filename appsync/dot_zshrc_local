@@ -1,0 +1,5 @@
+ZSHRC_RC="Dropbox/appsync/zshrc_profile"
+if [ -f $ZSHRC_RC ];
+then
+   source $ZSHRC_RC
+fi

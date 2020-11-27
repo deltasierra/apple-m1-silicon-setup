@@ -1,0 +1,5 @@
+DROPBOX_RC="Dropbox/appsync/bash_profile"
+if [ -f $DROPBOX_RC ];
+then
+    source $DROPBOX_RC
+fi
