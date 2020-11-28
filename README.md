@@ -74,7 +74,7 @@ Some additional helpful links
 - pyenv (installs but subsequent `python install {version}` fails)
 
 # dot profiles 
-I want the same user experience between all my different machines so I sync my dot profiles using Dropbox.  The dot files in the local directory or each device points to another file in a folder called `appsync` in Dropbox.  
+I want the same user experience between all my different machines so I sync my dot profiles using Dropbox.  The dot files in the local directory of each device points to another file in a folder called `appsync` in Dropbox.  
 
 I've included all the working files I used for this process in this repo. 
 
@@ -102,7 +102,7 @@ then
 fi
 ```
 
-There are a ton of alternatives ways.  Check out https://dotfiles.github.io/
+There are a ton of alternatives ways.  Check out https://dotfiles.github.io/ to see the world of possibilities. 
 
 ## zsh 
 Apple now defaults to zsh but I prefer to install zsh using homebrew so I can update without messing with the OSX default. 
@@ -159,7 +159,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 ```
 
 ### p10k configuration wizard
-After this I restart terminal and run the p10k configuration wizard to install fonts and get any dependencies installed. 
+After this I restart terminal, I'm using iTerm2, and run the p10k configuration wizard to install fonts and get any dependencies installed. 
 
 When the p10k wizard finishes it creates `.p10k.zsh` in your home directory.  I want to share my settings between multiple machines so I delete this file and replace it with a symbolic link to this file in Dropbox. 
 
@@ -223,3 +223,10 @@ Verify it's using brew and native arm
 The end result looks like this. 
 
 ![Getting Started](m1_macbook_terminal.png)
+
+## iTerm 2 and Fonts
+Your [font selection](https://github.com/romkatv/powerlevel10k#fonts) is key to get icons and glyphs working to the fullest under Powerlevel10K.  I found it best to stick with the Nerd Fonts to get the most icons/glyphs working.  I'm currently using [FuraMono Nerd Font](appsync/fonts/Exported%20Fonts/FuraMono%20Nerd%20Font/Fura%20Mono%20Regular%20Nerd%20Font%20Complete.otf).
+
+![Here is my iTerm2 font settings](iterm2_text.png)
+
+In the screenshot above, I'm using iTerm2 with the Cobalt2 color preset ![Cobalt2](appsync/iTerm-themes/Themes/screenshots/cobalt2.png) 
